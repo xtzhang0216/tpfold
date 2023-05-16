@@ -1,0 +1,32 @@
+Rank 1 start loading data...
+Rank 0 start loading data...
+UNK token:0,too long:4255, 'not_match':2
+UNK token:0,too long:4255, 'not_match':2
+ClusteredTraining:13661, ClusteredValidation:1045, ClusteredTest:1038
+0 start loading model...
+1start training...
+0start training...
+
+
+structure aa:False, residx:False
+
+4
+structure aa:False, residx:False
+
+4
+else: s:False, z:False
+
+else: s:False, z:False
+
+else: s:False, z:False
+
+else: s:False, z:False
+
+else: s:False, z:False
+
+structure position:True, frames:True
+
+else: s:False, z:False
+
+structure position:True, frames:True
+

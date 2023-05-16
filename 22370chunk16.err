@@ -1,0 +1,168 @@
+/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/distributed/launch.py:180: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:12345 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:12345 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:12345 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:12345 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:12345 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:12345 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:12345 (errno: 97 - Address family not supported by protocol).
+/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/numpy/core/fromnumeric.py:43: FutureWarning: The input object of type 'Tensor' is an array-like implementing one of the corresponding protocols (`__array__`, `__array_interface__` or `__array_struct__`); but not a sequence (or 0-D). In the future, this object will be coerced as if it was first converted using `np.array(obj)`. To retain the old behaviour, you have to either modify the type 'Tensor', or assign to an empty array created with `np.empty(correct_shape, dtype=object)`.
+  result = getattr(asarray(obj), method)(*args, **kwds)
+/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/numpy/core/fromnumeric.py:43: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  result = getattr(asarray(obj), method)(*args, **kwds)
+/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/numpy/core/fromnumeric.py:43: FutureWarning: The input object of type 'Tensor' is an array-like implementing one of the corresponding protocols (`__array__`, `__array_interface__` or `__array_struct__`); but not a sequence (or 0-D). In the future, this object will be coerced as if it was first converted using `np.array(obj)`. To retain the old behaviour, you have to either modify the type 'Tensor', or assign to an empty array created with `np.empty(correct_shape, dtype=object)`.
+  result = getattr(asarray(obj), method)(*args, **kwds)
+/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/numpy/core/fromnumeric.py:43: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  result = getattr(asarray(obj), method)(*args, **kwds)
+wandb: Currently logged in as: xtzhang0216. Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: xtzhang0216. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.13.9 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.7
+wandb: Run data is saved locally in /pubhome/xtzhang/wandb/run-20230117_153558-1o9plnos
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run olive-water-41
+wandb: ⭐️ View project at https://wandb.ai/xtzhang0216/why_not_train_adjustcheckpoint
+wandb: 🚀 View run at https://wandb.ai/xtzhang0216/why_not_train_adjustcheckpoint/runs/1o9plnos
+wandb: wandb version 0.13.9 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.7
+wandb: Run data is saved locally in /pubhome/xtzhang/wandb/run-20230117_153557-v92zmico
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fine-dust-42
+wandb: ⭐️ View project at https://wandb.ai/xtzhang0216/why_not_train_adjustcheckpoint
+wandb: 🚀 View run at https://wandb.ai/xtzhang0216/why_not_train_adjustcheckpoint/runs/v92zmico
+Traceback (most recent call last):
+  File "/pubhome/xtzhang/myesm/fie2.py", line 332, in <module>
+    ddp_main(args)
+  File "/pubhome/xtzhang/myesm/fie2.py", line 109, in ddp_main
+    run(args, train_set1, validation_set1, test_set1)
+  File "/pubhome/xtzhang/myesm/fie2.py", line 199, in run
+    loss.backward()
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/autograd/function.py", line 267, in apply
+    return user_fn(self, *args)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/utils/checkpoint.py", line 141, in backward
+    outputs = ctx.run_function(*detached_inputs)
+  File "/pubhome/xtzhang/myesm/esm/esmfold/v1/trunk.py", line 192, in trunk_iter
+    s, z = block(s, z, mask=mask, residue_index=residx, chunk_size=self.chunk_size)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/pubhome/xtzhang/myesm/esm/esmfold/v1/tri_self_attn_block.py", line 151, in forward
+    self.tri_att_start(pairwise_state, mask=tri_mask, chunk_size=chunk_size)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/model/triangular_attention.py", line 128, in forward
+    x = self._chunk(
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/model/triangular_attention.py", line 76, in _chunk
+    return chunk_layer(
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/utils/chunk_utils.py", line 299, in chunk_layer
+    output_chunk = layer(**chunks)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/model/primitives.py", line 500, in forward
+    o = _attention(q, k, v, biases)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/model/primitives.py", line 252, in _attention
+    a = softmax_no_cast(a, -1)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/model/primitives.py", line 236, in softmax_no_cast
+    s = torch.nn.functional.softmax(t, dim=dim)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/nn/functional.py", line 1841, in softmax
+    ret = input.softmax(dim)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 22.00 MiB (GPU 0; 39.44 GiB total capacity; 33.38 GiB already allocated; 3.88 MiB free; 33.96 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+Traceback (most recent call last):
+  File "/pubhome/xtzhang/myesm/fie2.py", line 332, in <module>
+    ddp_main(args)
+  File "/pubhome/xtzhang/myesm/fie2.py", line 109, in ddp_main
+    run(args, train_set1, validation_set1, test_set1)
+  File "/pubhome/xtzhang/myesm/fie2.py", line 199, in run
+    loss.backward()
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/autograd/function.py", line 267, in apply
+    return user_fn(self, *args)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/utils/checkpoint.py", line 141, in backward
+    outputs = ctx.run_function(*detached_inputs)
+  File "/pubhome/xtzhang/myesm/esm/esmfold/v1/trunk.py", line 192, in trunk_iter
+    s, z = block(s, z, mask=mask, residue_index=residx, chunk_size=self.chunk_size)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/pubhome/xtzhang/myesm/esm/esmfold/v1/tri_self_attn_block.py", line 154, in forward
+    self.tri_att_end(pairwise_state, mask=tri_mask, chunk_size=chunk_size)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/model/triangular_attention.py", line 128, in forward
+    x = self._chunk(
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/model/triangular_attention.py", line 76, in _chunk
+    return chunk_layer(
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/utils/chunk_utils.py", line 264, in chunk_layer
+    prepped_inputs = tensor_tree_map(_prep_inputs, inputs)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/utils/tensor_utils.py", line 109, in tree_map
+    return dict_map(fn, tree, leaf_type)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/utils/tensor_utils.py", line 102, in dict_map
+    new_dict[k] = tree_map(fn, v, leaf_type)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/utils/tensor_utils.py", line 111, in tree_map
+    return [tree_map(fn, x, leaf_type) for x in tree]
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/utils/tensor_utils.py", line 111, in <listcomp>
+    return [tree_map(fn, x, leaf_type) for x in tree]
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/utils/tensor_utils.py", line 115, in tree_map
+    return fn(tree)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/openfold/utils/chunk_utils.py", line 259, in _prep_inputs
+    t = t.reshape(-1, *t.shape[no_batch_dims:])
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 588.00 MiB (GPU 1; 39.44 GiB total capacity; 35.93 GiB already allocated; 329.88 MiB free; 37.16 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.008 MB of 0.008 MB uploaded (0.000 MB deduped)wandb: \ 0.008 MB of 0.016 MB uploaded (0.000 MB deduped)wandb: Synced olive-water-41: https://wandb.ai/xtzhang0216/why_not_train_adjustcheckpoint/runs/1o9plnos
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230117_153558-1o9plnos/logs
+wandb: | 0.013 MB of 0.016 MB uploaded (0.000 MB deduped)wandb: / 0.016 MB of 0.016 MB uploaded (0.000 MB deduped)wandb: - 0.016 MB of 0.016 MB uploaded (0.000 MB deduped)wandb: \ 0.016 MB of 0.016 MB uploaded (0.000 MB deduped)WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 3817854 closing signal SIGTERM
+wandb: | 0.016 MB of 0.016 MB uploaded (0.000 MB deduped)ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 3817853) of binary: /pubhome/xtzhang/anaconda3/envs/TMprotein_predict/bin/python3
+Traceback (most recent call last):
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/distributed/launch.py", line 195, in <module>
+    main()
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/distributed/launch.py", line 191, in main
+    launch(args)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/distributed/launch.py", line 176, in launch
+    run(args)
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/distributed/run.py", line 753, in run
+    elastic_launch(
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/pubhome/xtzhang/anaconda3/envs/TMprotein_predict/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 246, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/pubhome/xtzhang/myesm/fie2.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-01-17_15:36:20
+  host      : f130.hn.org
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3817853)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
